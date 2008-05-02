@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="21"
+   name=""
+   committed-date="2007-06-05T13:07:18.768015Z"
+   url="svn+ssh://lethe.unicast.org/var/lib/svn/public/rails/plugins/pinds_utils/tasks"
+   last-author="lars"
+   kind="dir"
+   uuid="59c63311-5d18-0410-9742-fa63d15280cb"
+   repos="svn+ssh://lethe.unicast.org/var/lib/svn/public"
+   revision="27"/>
+<entry
+   committed-rev="29"
+   name="pinds_utils_tasks.rake"
+   text-time="2007-10-21T15:50:58.000000Z"
+   committed-date="2007-10-30T11:30:41.138002Z"
+   checksum="91d0ea8da575608b611603b2af00b887"
+   last-author="lars"
+   kind="file"
+   revision="29"/>
+</wc-entries>

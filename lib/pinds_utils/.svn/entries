@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="24"
+   name=""
+   committed-date="2007-06-07T12:36:17.748926Z"
+   url="svn+ssh://lethe.unicast.org/var/lib/svn/public/rails/plugins/pinds_utils/lib/pinds_utils"
+   last-author="lars"
+   kind="dir"
+   uuid="59c63311-5d18-0410-9742-fa63d15280cb"
+   repos="svn+ssh://lethe.unicast.org/var/lib/svn/public"
+   revision="27"/>
+<entry
+   committed-rev="33"
+   name="controller_utils.rb"
+   text-time="2007-11-22T13:56:29.000000Z"
+   committed-date="2007-11-22T13:56:58.312662Z"
+   checksum="1f77a94629456689cba5ec45a66c8e45"
+   last-author="lars"
+   kind="file"
+   revision="33"/>
+<entry
+   committed-rev="21"
+   name="secret.rb"
+   text-time="2007-06-05T13:06:56.000000Z"
+   committed-date="2007-06-05T13:07:18.768015Z"
+   checksum="9897b0e11991cc76415b28f2cfb9fb41"
+   last-author="lars"
+   kind="file"/>
+<entry
+   committed-rev="22"
+   name="attribute_labels.rb"
+   text-time="2007-06-05T13:15:00.000000Z"
+   committed-date="2007-06-05T13:11:38.540337Z"
+   checksum="8a958b65abd22c86417825046eaff8a0"
+   last-author="lars"
+   kind="file"/>
+<entry
+   committed-rev="20"
+   name="enumeration.rb"
+   text-time="2007-05-16T13:14:14.000000Z"
+   committed-date="2007-05-16T13:10:32.589723Z"
+   checksum="d47d9be27edaa44f5af09beed62e7392"
+   last-author="lars"
+   kind="file"/>
+<entry
+   committed-rev="32"
+   name="string_ext.rb"
+   text-time="2007-11-01T18:59:27.000000Z"
+   committed-date="2007-11-01T19:00:20.806999Z"
+   checksum="50d29614eb908af088fec0420ed91014"
+   last-author="lars"
+   kind="file"
+   revision="32"/>
+<entry
+   committed-rev="24"
+   name="updated_ip_and_by.rb"
+   text-time="2007-06-07T12:39:40.000000Z"
+   committed-date="2007-06-07T12:36:17.748926Z"
+   checksum="e3c2bcaff085edb1cc392002c6db6bc2"
+   last-author="lars"
+   kind="file"/>
+<entry
+   committed-rev="23"
+   name="view_helpers.rb"
+   text-time="2007-06-07T12:29:02.000000Z"
+   committed-date="2007-06-07T12:24:58.172789Z"
+   checksum="99bebedef8d7ea1860d6d4512a14d9fd"
+   last-author="lars"
+   kind="file"/>
+</wc-entries>
