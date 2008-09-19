@@ -32,7 +32,7 @@ class String
   end
   
   def pluralize(count = nil, plural = nil)
-    count == 1 ? self : (plural || Inflector.pluralize(self))
+    count == 1 ? self : (plural || ActiveSupport::Inflector.pluralize(self))
   end
   
   def strip_links

@@ -18,8 +18,8 @@ module PindsUtils
         singular
       elsif plural
         plural
-      elsif Object.const_defined?("Inflector")
-        Inflector.pluralize(singular)
+      elsif Object.const_defined?("ActiveSupport::Inflector")
+        ActiveSupport::Inflector.pluralize(singular)
       else
         singular + "s"
       end
