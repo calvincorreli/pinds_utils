@@ -28,7 +28,7 @@ end
 
 class String
   def truncate(length = 30, truncate_string = "...")
-    ActionView::Helpers::TextHelper.truncate(self, length, truncate_string)
+    ActionView::Helpers::TextHelper.truncate(self, :length => length, :omission => truncate_string)
   end
   
   def pluralize(count = nil, plural = nil)
