@@ -59,6 +59,12 @@ class String
     result.gsub!(/Æ/, 'AE')
     result.gsub!(/Ø/, 'OE')
     result.gsub!(/Å/, 'AA')
+    
+    # Handle accented chars (is there a standardized way to do this?)
+    result.gsub!(/[áä]/, 'a')
+    result.gsub!(/[éë]/, 'e')
+    result.gsub!(/[ÁÄ]/, 'A')
+    result.gsub!(/[ÉË]/, 'E')
 
     # strip all non word chars
     result.gsub!(/[^a-zA-Z0-9_-]/, ' ')
