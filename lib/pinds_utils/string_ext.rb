@@ -27,12 +27,16 @@ module ActionView
 end
 
 class String
-  def truncate(length = 30, truncate_string = "...")
-    ActionView::Helpers::TextHelper.truncate(self, :length => length, :omission => truncate_string)
+  unless method_defined?(:truncate)
+    def truncate(length = 30, truncate_string = "...")
+      ActionView::Helpers::TextHelper.truncate(self, :length => length, :omission => truncate_string)
+    end
   end
   
-  def pluralize(count = nil, plural = nil)
-    count == 1 ? self : (plural || ActiveSupport::Inflector.pluralize(self))
+  unless method_defined?(:pluralize)
+    def pluralize(count = nil, plural = nil)
+      count == 1 ? self : (plural || ActiveSupport::Inflector.pluralize(self))
+    end
   end
   
   def strip_links
