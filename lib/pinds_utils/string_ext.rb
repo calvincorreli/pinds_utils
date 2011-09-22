@@ -50,8 +50,20 @@ class String
   # From Typo:
   # Converts a post title to its-title-using-dashes
   # All special chars are stripped in the process  
-  def to_url(maxlen = nil)
-    result = self.downcase.strip
+  #
+  # options:
+  #   :maxlen    - max length of the resulting string
+  #   :keep_case - don't downcase the string
+  def to_url(options = {})
+    if options.is_a?(Fixnum)
+      maxlen = options
+      options = {}
+    else
+      maxlen = options[:maxlen]
+    end
+    
+    result = self.strip
+    result.downcase! unless options[:keep_case]
 
     # replace quotes by nothing
     result.gsub!(/['"]/, '')
