@@ -1,8 +1,7 @@
 require 'test/unit'
 
 class PindsUtilsTest < Test::Unit::TestCase
-  # Replace this with your real tests.
-  def test_this_plugin
-    flunk
+  test "truth" do
+    assert_kind_of Module, PindsUtils
   end
 end
