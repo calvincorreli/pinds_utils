@@ -10,13 +10,8 @@ module ActionView
         RedCloth.new(text.to_s).to_html.gsub( /(.)\n(?!\Z| *([#*=]+(\s|$)|[{|]))/, "\\1<br />" ).gsub(%r{</p><br />}, '</p>')
       end
       
-      def comment_to_html(body)
-        nofollowify(sanitize(textilize(auto_link(body.dup).gsub(%r|(>https?://)(\S{50,50})(\S*)(<)|, '\1\2&hellip;\4'))))
-      end
-
       # Make available to the String methods below
-      module_function :pluralize, :truncate, :nofollowify, :auto_link, :textilize, 
-                      :auto_link_email_addresses, :auto_link_urls
+      module_function :pluralize, :truncate, :textilize                      
       module_function :strip_links, :sanitize rescue nil
     end
 
