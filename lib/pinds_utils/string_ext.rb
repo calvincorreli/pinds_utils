@@ -64,18 +64,13 @@ class String
     result.gsub!(/['"]/, '')
 
     # Handle Danish chars
-    result.gsub!(/æ/, 'ae')
-    result.gsub!(/ø/, 'oe')
-    result.gsub!(/å/, 'aa')
-    result.gsub!(/Æ/, 'AE')
-    result.gsub!(/Ø/, 'OE')
-    result.gsub!(/Å/, 'AA')
-    
+    result.gsub!(/[æÆ]/, 'ae')
+    result.gsub!(/[øØ]/, 'oe')
+    result.gsub!(/[åÅ]/, 'aa')
+
     # Handle accented chars (is there a standardized way to do this?)
-    result.gsub!(/[áä]/, 'a')
-    result.gsub!(/[éë]/, 'e')
-    result.gsub!(/[ÁÄ]/, 'A')
-    result.gsub!(/[ÉË]/, 'E')
+    result.gsub!(/[áäÁÄ]/, 'a')
+    result.gsub!(/[éëÉË]/, 'e')
 
     # strip all non word chars
     result.gsub!(/[^a-zA-Z0-9_-]/, ' ')
