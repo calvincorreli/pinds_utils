@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module ActionView
   module Helpers
     module TextHelper
